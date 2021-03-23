@@ -1,0 +1,96 @@
+body {margin:25px;}
+
+div.polaroid {
+  width: 100%;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 25px;
+  max-width: 100%;
+  display: flex;
+}
+
+div.container-left{
+    flex: 45%;
+}
+
+div.container{
+    color: rgb(75, 9, 160);
+    flex: 50%;
+    text-align: center;
+    /* padding-right: 3.75%;
+    margin-right: 50%; */
+    width: 245px;
+    overflow-wrap: break-word;
+
+}
+
+.container p{
+    /* text-shadow: 5px;
+    font-weight: bold; */
+    font-family: 'Courier New', Courier, monospace;
+    
+}
+
+.container h3{
+    text-shadow: 5px 5px 8px rgb(250, 7, 7) ;
+    font-weight: bold;
+}
+
+.responsive {
+    padding: 0 6px;
+    /* float: left; */
+    /* width: 24.99999%; */
+    width: 50%;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+
+  /* .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  } */
+
+  .clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  @media only screen and (max-width: 700px) {
+    .responsive {
+      width: 49.99999%;
+      margin: 6px 0;
+    }
+
+    /* .polaroid p,h3{
+      font-size: smaller;
+      text-align: justify;
+
+    } */
+  }
+
+  @media only screen and (max-width: 500px) {
+    .responsive {
+      width: 100%;
+    }
+
+    /* .container{
+      position: relative;
+      overflow: hidden;
+
+    } */
+
+    /* .polaroid{
+
+      overflow-wrap: break-word;
+      overflow: auto;
+
+
+    } */
+
+
+  }
